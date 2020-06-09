@@ -1,0 +1,26 @@
+
+### Registration
+POST http://127.0.0.1:8000/auth/registration/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Lokesh123",
+    "password1": "JaGGu@1996",
+    "password2":"JaGGu@1996",
+    "email":"rahmanp@gmail.com"
+}
+
+### Login
+POST http://127.0.0.1:8000/auth/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Lokesh123",
+    "password":"JaGGu@1996",
+    "email":"rahmanp@gmail.com"
+}
+
+### me
+GET http://127.0.0.1:8000/me/ HTTP/1.1
+Content-Type: application/json
+Authorization: Token 7911373351828c9d274c0e1b1edfaf7e9f83e695
